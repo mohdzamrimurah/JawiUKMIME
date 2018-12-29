@@ -1,4 +1,4 @@
-# JawiUKMIME
+# JawiUKM IME
 
 jawi keyboard. This is an initial release of jawi keyboard for android, based on MS standard (malaysia standard encoding for Jawi characters.
 
