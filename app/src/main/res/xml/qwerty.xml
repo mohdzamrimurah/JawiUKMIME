@@ -53,7 +53,15 @@
         <Key android:codes="1567" android:keyEdgeFlags="right" android:keyLabel="؟" />
     </Row>
     <Row android:textSize="50dp" android:rowEdgeFlags="bottom">
+        <!--
+            android:codes: -101 is not a framework-defined key code but a key code that is
+            privately defined in com.example.android.softkeyboard.LatinKeyboardView.
+        -->
+        <!--
+
         <Key android:keyWidth="25%p" android:codes="1632,1633,1634,1635,1636" android:keyEdgeFlags="left" android:keyLabel="٠ ١ ٢ ٣ ٤ " />
+        -->
+        <Key android:keyWidth="25%p" android:codes="-2" android:keyEdgeFlags="left" android:keyLabel="٠ ١ ٢ ٣ ٤ " />
         <Key android:keyWidth="25%p" android:codes="1637,1638,1639,1640,1641" android:keyLabel="٥ ٦ ٧ ٨ ٩" />
         <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="40%p" android:isRepeatable="true"/>
         <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true"/>
