@@ -16,6 +16,8 @@ public class JawiUKMIME extends InputMethodService
 
     private boolean caps = false;
 
+    private int id = 0;
+
     @Override
     public void onKey(int primaryCode, int[] keyCodes) {
         InputConnection ic = getCurrentInputConnection();
@@ -31,6 +33,23 @@ public class JawiUKMIME extends InputMethodService
                 break;
             case Keyboard.KEYCODE_DONE:
                 ic.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_ENTER));
+                break;
+            case Keyboard.KEYCODE_MODE_CHANGE:
+                /* switch to next keyboard layout */
+                if (id == 0)
+                {
+                    keyboard = new Keyboard(this, R.xml.symbols);
+                    kv.setKeyboard(keyboard);
+                    kv.setOnKeyboardActionListener(this);
+                    id = 1;
+                }
+                else
+                {
+                    keyboard = new Keyboard(this, R.xml.qwerty);
+                    kv.setKeyboard(keyboard);
+                    kv.setOnKeyboardActionListener(this);
+                    id = 0;
+                }
                 break;
             default:
                 char code = (char)primaryCode;
