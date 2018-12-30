@@ -24,16 +24,24 @@
     android:keyHeight="60dp"
     >
     <Row>
-        <Key android:codes="49" android:keyLabel="1" android:keyEdgeFlags="left"/>
-        <Key android:codes="50" android:keyLabel="2"/>
-        <Key android:codes="51" android:keyLabel="3"/>
-        <Key android:codes="52" android:keyLabel="4"/>
-        <Key android:codes="53" android:keyLabel="5"/>
-        <Key android:codes="54" android:keyLabel="6"/>
-        <Key android:codes="55" android:keyLabel="7"/>
-        <Key android:codes="56" android:keyLabel="8"/>
-        <Key android:codes="57" android:keyLabel="9"/>
-        <Key android:codes="48" android:keyLabel="0" android:keyEdgeFlags="right"/>
+        <!--
+        <Key android:keyWidth="25%p" android:codes="1632,1633,1634,1635,1636" android:keyEdgeFlags="left"
+        android:keyLabel="٠ ١ ٢ ٣ ٤ " />
+        -->
+
+        <!--
+        <Key android:keyWidth="25%p" android:codes="1637,1638,1639,1640,1641" android:keyLabel="٥ ٦ ٧ ٨ ٩" />
+        -->
+        <Key android:codes="1632" android:keyLabel="٠" android:keyEdgeFlags="left"/>
+        <Key android:codes="1633" android:keyLabel="١"/>
+        <Key android:codes="1634" android:keyLabel="٢"/>
+        <Key android:codes="1635" android:keyLabel="٣"/>
+        <Key android:codes="1636" android:keyLabel="٤"/>
+        <Key android:codes="1637" android:keyLabel="٥"/>
+        <Key android:codes="1638" android:keyLabel="٦"/>
+        <Key android:codes="1639" android:keyLabel="٧"/>
+        <Key android:codes="1640" android:keyLabel="٨"/>
+        <Key android:codes="1641" android:keyLabel="٩" android:keyEdgeFlags="right"/>
     </Row>
 
     <Row>
@@ -50,36 +58,30 @@
     </Row>
 
     <Row>
-        <Key android:codes="-1" android:keyLabel="Shift"
-            android:keyWidth="15%p" android:isModifier="true"
-            android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="65010" android:keyLabel="ﷲ"
+             android:keyEdgeFlags="left"/>
         <Key android:codes="33" android:keyLabel="!" />
         <Key android:codes="34" android:keyLabel="&quot;"/>
         <Key android:codes="39" android:keyLabel="\'"/>
         <Key android:codes="58" android:keyLabel=":"/>
-        <Key android:codes="59" android:keyLabel=";"/>
-        <Key android:codes="47" android:keyLabel="/" />
-        <Key android:codes="63" android:keyLabel="\?"/>
+        <Key android:codes="1563" android:keyLabel="؛"/>
+        <Key android:codes="65018" android:keyLabel="ﷺ" />
+        <Key android:codes="65021" android:keyWidth="20%p" android:keyLabel="﷽"/>
         <Key android:codes="-5" android:keyLabel="DEL"
-            android:keyWidth="15%p" android:keyEdgeFlags="right"
+             android:keyEdgeFlags="right"
             android:isRepeatable="true"/>
     </Row>
 
     <Row  android:rowEdgeFlags="bottom">
+        <!--
         <Key android:codes="-3" android:keyLabel="DONE"
             android:keyWidth="15%p" android:keyEdgeFlags="left" />
-        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="10%p" />
-        <!--
-            android:codes: -101 is not a framework-defined key code but a key code that is
-            privately defined in com.example.android.softkeyboard.LatinKeyboardView.
-        -->
-        <Key android:codes="-101" android:keyLabel="SWITCH"
-            android:keyWidth="10%p" />
-        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="30%p"
+         -->
+        <Key android:codes="-2" android:keyLabel="ا ب ت" android:keyWidth="25%p" />
+        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="50%p"
             android:isRepeatable="true"/>
-        <Key android:codes="44" android:keyLabel="," android:keyWidth="15%p" />
-        <Key android:codes="10" android:keyLabel="RETURN"
-            android:keyWidth="20%p" android:keyEdgeFlags="right"
+        <Key android:codes="10" android:keyLabel="ENTER"
+            android:keyWidth="25%p" android:keyEdgeFlags="right"
             />
     </Row>
 </Keyboard>

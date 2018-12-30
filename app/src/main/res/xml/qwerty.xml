@@ -41,7 +41,7 @@
         <Key android:codes="1591" android:keyEdgeFlags="right" android:keyLabel="ط" />
     </Row>
     <Row android:textSize="50dp">
-        <Key android:codes="1548,1748,46" android:keyEdgeFlags="left" android:keyLabel="، ۔ ." />
+        <Key android:codes="46" android:keyEdgeFlags="left" android:keyLabel="." />
         <Key android:codes="1890" android:keyLabel="ݢ" />
         <Key android:codes="1743" android:keyLabel="ۏ" />
         <Key android:codes="1725" android:keyLabel="ڽ" />
@@ -49,7 +49,7 @@
         <Key android:codes="1696" android:keyLabel="ڠ" />
         <Key android:codes="1670" android:keyLabel="چ" />
         <Key android:codes="1592" android:keyLabel="ظ" />
-        <Key android:codes="1634" android:keyLabel="٢" />
+        <Key android:codes="1548" android:keyLabel="،" />
         <Key android:codes="1567" android:keyEdgeFlags="right" android:keyLabel="؟" />
     </Row>
     <Row android:textSize="50dp" android:rowEdgeFlags="bottom">
@@ -58,13 +58,15 @@
             privately defined in com.example.android.softkeyboard.LatinKeyboardView.
         -->
         <!--
-
         <Key android:keyWidth="25%p" android:codes="1632,1633,1634,1635,1636" android:keyEdgeFlags="left" android:keyLabel="٠ ١ ٢ ٣ ٤ " />
         -->
         <Key android:keyWidth="25%p" android:codes="-2" android:keyEdgeFlags="left" android:keyLabel="٠ ١ ٢ ٣ ٤ " />
+        <!--
         <Key android:keyWidth="25%p" android:codes="1637,1638,1639,1640,1641" android:keyLabel="٥ ٦ ٧ ٨ ٩" />
+        -->
+        <Key android:keyWidth="25%p" android:codes="-2" android:keyLabel="\@ \# &amp; -" />
         <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="40%p" android:isRepeatable="true"/>
         <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true"/>
-        <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+        <Key android:codes="-4" android:keyLabel="ENTER" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>
