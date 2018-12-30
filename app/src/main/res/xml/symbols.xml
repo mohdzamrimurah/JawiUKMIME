@@ -63,8 +63,8 @@
         <Key android:codes="33" android:keyLabel="!" />
         <Key android:codes="34" android:keyLabel="&quot;"/>
         <Key android:codes="39" android:keyLabel="\'"/>
-        <Key android:codes="58" android:keyLabel=":"/>
         <Key android:codes="1563" android:keyLabel="؛"/>
+        <Key android:codes="8204" android:keyLabel="ZWNJ"/>
         <Key android:codes="65018" android:keyLabel="ﷺ" />
         <Key android:codes="65021" android:keyWidth="20%p" android:keyLabel="﷽"/>
         <Key android:codes="-5" android:keyLabel="DEL"
